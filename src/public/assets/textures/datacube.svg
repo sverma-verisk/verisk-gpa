@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="90px" viewBox="0 0 88 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>screenshot636637921715713701DataCube-ExperienceProfiler</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Wires" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="category-1" transform="translate(-507.000000, -288.000000)">
+            <g id="screenshot636637921715713701DataCube-ExperienceProfiler" transform="translate(507.000000, 288.000000)">
+                <rect id="Rectangle-path" stroke="#5DC9E5" stroke-width="6.6455" stroke-linecap="round" stroke-linejoin="round" x="43.3972603" y="6.25" width="39.7808219" height="40"></rect>
+                <g id="Group" transform="translate(0.000000, 8.750000)">
+                    <path d="M55.7534247,17.03125 L22.3767123,17.03125 M15.8972603,25.390625 L15.8972603,56.5625 M24.109589,64.84375 L52.9657534,64.84375 M62.0821918,56.5625 L62.0821918,50.078125 L62.0821918,25.390625" id="Shape" stroke="#868686" stroke-width="6.6455" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle-path" fill="#005C97" fill-rule="nonzero" x="46.109589" y="0.625" width="31.7191781" height="32.890625"></rect>
+                    <rect id="Rectangle-path" fill="#005C97" fill-rule="nonzero" x="0.150684932" y="0.625" width="31.7191781" height="32.890625"></rect>
+                    <rect id="Rectangle-path" fill="#005C97" fill-rule="nonzero" x="46.109589" y="48.359375" width="31.7191781" height="32.890625"></rect>
+                    <rect id="Rectangle-path" fill="#005C97" fill-rule="nonzero" x="0.150684932" y="48.359375" width="31.7191781" height="32.890625"></rect>
+                </g>
+                <ellipse id="Oval" fill="#5DC9E5" fill-rule="nonzero" cx="42.7945205" cy="6.875" rx="6.63013699" ry="6.875"></ellipse>
+                <ellipse id="Oval" fill="#5DC9E5" fill-rule="nonzero" cx="81.369863" cy="6.875" rx="6.63013699" ry="6.875"></ellipse>
+                <ellipse id="Oval" fill="#5DC9E5" fill-rule="nonzero" cx="81.369863" cy="45.625" rx="6.63013699" ry="6.875"></ellipse>
+                <ellipse id="Oval" fill="#5DC9E5" fill-rule="nonzero" cx="42.7945205" cy="45.625" rx="6.63013699" ry="6.875"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

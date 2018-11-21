@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verisk GPA POC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900|Material+Icons" rel="stylesheet"> -->
+</head>
+
+<body class="">
+    <div id="wrapper">
+
+        <div class="bkgd"></div>
+        <section id="appContainer" class="main">
+                <div id="loading"></div>
+            </section>
+
+
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-2 header-logo">
+                            <a href="/"><img class="logo-img" src="https://s3.amazonaws.com/nextgen-ui/ISO-Design-Pattern/images/logo.png"></a>
+                        </div>
+                        <div class="mid col-md-8">
+                            <ul class="navigation">
+                                <li class="nav-item">
+                                    <a class="text-uppercase" href="javascript:;">Products <span class="caret"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-uppercase" href="javascript:;">Education <span class="caret"></span> </a>
+                                </li>
+                                <li class="nav-item"><a href="javascript:;" target="_blank" class="text-uppercase">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="tools pull-right">
+                                <div class="global-search">
+                                    <a href=""><i class="material-icons">search</i></a>
+                                </div>
+                                <div class="user-tools">
+                                    <a href="" class="chat"><i class="material-icons">chat</i></a>
+                                    <div class="dropdown">
+                                        <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">
+                                            <i class="material-icons">person</i>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <!-- dropdown menu -->
+                                        <!--
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">ISO Admin</a></li>
+                              <li><a href="#">Production Center Administration</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Change Password</a></li>
+                              <li><a href="#">Manage Profile</a></li>
+                              <li><a href="#">Manage Your ISOnet Product News</a></li>
+                              <li><a href="#">Log Out</a></li>
+                           </ul>
+                         -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="subnav" class="row align-items-center">
+                
+                    <div class="col-md-4">
+                        <span>Growth & Profitability Analytics</span>
+
+                    </div>
+                    <div class="col-md-8 px-5">
+                        <div id="product-dropdown" class="pull-right">
+                            <span>My GPA Products</span>
+                            <i class="material-icons pull-right">expand_more</i>
+                            <div id="product-list-mask">
+                              <div id="product-list">
+                                  <ul>
+                                     <li><div class="icon-holder"><img class="" src="/assets/img/icon-marketlandscape.png"></div> Market Landscape</li>
+                                    <li><div class="icon-holder"><img class="" src="/assets/img/icon-marketwatch.png"></div> MarketWatch</li>
+                                   
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </header>
+
+        <nav id="sidebar" class="col-md-3">
+
+                        
+            <div id="sidebar-header" class="row align-items-center">
+                <div class="col home-btn">
+                  <i class="material-icons">arrow_back_ios</i><span>I want to &hellip;</span></div>
+            </div>
+            <div class="row">
+                <div class="col category-menu">
+                    <ul>
+                        <li class="">
+                            <div class="cat-label">
+                                <a href="#growth"><span>Identify Growth</span> Opportunities</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cat-label">
+                                <a href="#">Build Product</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cat-label">
+                                <a href="#acquire">Acquire Business</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cat-label">
+                                <a href="#">Benchmark Performance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cat-label">
+                                <a href="#">Price Business</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cat-label">
+                                <a href="#">Manage Portfolio</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+    </nav>
+       
+    <div id="main" class="container-fluid content">
+        <!-- snapshot view -->
+        <div class="row ">
+            <div id="product-snapshots" class="col nopad_l-r">
+             
+                <div class="row snapshot-intro align-items-center">
+                  <div class="col-md-3 rightbar snap-title">
+                    <h2>Product Snapshots</h2>
+                  </div>
+                  <div class="col">
+                    <p>Gain insights such as concentrations of premium or unwanted exposures to help you focus your resources. Click on a product snapshot below to learn more and to request for a demo.</p>
+                  </div>
+                </div>
+                <div id="growth-snapshot" class="snapshot-container">
+                      <div id="product-landscape" class="snapshot" role="button" data-toggle="modal" data-target="#modalMarketLandscape">
+                          <div class="icon-holder">
+                              <img class="" src="/assets/img/icon-marketlandscape.png">
+                          </div>
+                          <div class="row align-items-center">
+                              <div class="col snapshot-title">
+                                  <h2 class="float-left">Market Landscape</h2>
+                                  
+                              </div>
+                          </div>
+                          <div class="row snapshot-body">
+                              <div class="col">
+                                  <div class="use-case">I want to &hellip;</div>
+                                  <ul>
+                                      <li>Visually benchmark my performance against the industry</li>
+                                      <li>Discover profitable markets for growth opportunities</li>
+                                      <li>Locate problem areas within my book of business for improvement or exit</li>
+                                      <li>Identity new LOBs to enter</li>
+                                      <li>Monitor improvements & degradation of profitability</li>
+                                  </ul>
+                                  <div class="have-access">
+                                      <a class="btn btn-primary default-btn" href="#marketlandscape" >Learn more</a>
+                                      <a class="btn btn-primary direct-btn" href="#" role="button">Go to Market Landscape <i class="material-icons">open_in_new</i></a>
+                                  </div>
+                              </div>
+                              <div class="col example-img">
+                                  <img class="" src="/assets/img/stat-marketlandscape3.png">
+                              </div>
+                              
+                          </div>
+                      </div>
+                      <div id="product-datacube" class="snapshot">
+                          <div class="icon-holder">
+                              <img class="" src="/assets/img/icon-datacube.png">
+                          </div>
+                          <div class="row align-items-center">
+                              <div class="col snapshot-title">
+                                  <h2 class="float-left">DataCube</h2>
+                              </div>
+                          </div>
+                          <div class="row snapshot-body">
+                              <div class="col">
+                                  <div class="use-case">I want to &hellip;</div>
+                                  <ul>
+                                      <li>Create a customized multivariate data report</li>
+                                      <li>Finetune my pricing and decisions based on class</li>
+                                      <li>Analyze historical loss data</li>
+                                      <li>Benchmark my performance against the industry</li>
+                                  </ul>
+                                  <a class="btn btn-primary" href="#" role="button">Learn more</a>
+                              
+                              </div>
+                              <div class="col example-img">
+                                  <img class="" src="/assets/img/stat-datacube3.png">
+                              </div>
+                              
+                          </div>
+                      </div>
+                   
+                      <div id="product-stance" class="snapshot" role="button" data-toggle="modal" data-target="#modalMarketStance">
+                          <div class="icon-holder">
+                              <img class="" src="/assets/img/icon-pov.png">
+                          </div>
+                          <div class="row align-items-center">
+                              <div class="col snapshot-title">
+                                  <h2 class="float-left">MarketStance</h2>
+                                  
+                              </div>
+                          </div>
+                          <div class="row snapshot-body">
+                              <div class="col">
+                                  <div class="use-case">I want to &hellip;</div>
+                                  <ul>
+                                      <li>Segment commercial markets by location, industry and size across all core and specialty lines of business</li>
+                                      <li>Identify growth opportunities</li>
+                                      <li>Assess segmentation and appetite for building a new product</li>
+                                      <li>Identify premium opportunities across lines of businesses</li>
+                                  </ul>
+                                  <a class="btn btn-primary default-btn" >Learn more</a>
+                              </div>
+                              <div class="col example-img">
+                                  <img class="" src="/assets/img/stat-marketstance3.png">
+                              </div>
+                          </div>
+                      </div>
+                 
+                      <div id="product-watch" class="snapshot">
+                         <div class="icon-holder">
+                              <img class="" src="/assets/img/icon-marketwatch.png">
+                          </div>
+                          <div class="row align-items-center">
+                              <div class="col snapshot-title">
+                                  <h2 class="float-left">MarketWatch</h2>
+                                  </div>
+                          </div>
+                          <div class="row snapshot-body">
+                
+                              <div class="col">
+                                  <div class="use-case">I want to &hellip;</div>
+                                  <ul>
+                                      <li>Analyze pricing trends and market cycles by premium size, state, and line of insurance</li>
+                                      <li>Identify growth opportunities</li>
+                                  </ul>
+                                  <a class="btn btn-primary" href="#" role="button">Learn more</a>
+                              </div>
+                              <div class="col example-img">
+                                  <img class="" src="/assets/img/stat-marketwatch3.png">
+                              </div>
+                          </div>
+                      </div>
+                </div> <!-- end growth-snapshot -->
+
+
+                <div id="acquire-snapshot" class="snapshot-container">
+                    <div id="product-stance" class="snapshot" role="button" data-toggle="modal" data-target="#modalMarketStance">
+                        <div class="icon-holder">
+                            <img class="" src="/assets/img/icon-pov.png">
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col snapshot-title">
+                                <h2 class="float-left">MarketStance</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="row snapshot-body">
+              
+                            <div class="col">
+                                <div class="use-case">I want to &hellip;</div>
+                                <ul>
+                                    <li>Segment commercial markets by location, industry and size across all core and specialty lines of business</li>
+                                    <li>Identify growth opportunities</li>
+                                    <li>Assess segmentation and appetite for building a new product</li>
+                                    <li>Identify premium opportunities across lines of businesses</li>
+                                </ul>
+                                <a class="btn btn-primary" href="#" role="button">Learn more</a>
+                            </div>
+                            <div class="col example-img">
+                                <img class="" src="/assets/img/stat-marketstance3.png">
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div id="product-watch" class="snapshot">
+                        <div class="icon-holder">
+                            <img class="" src="/assets/img/icon-marketwatch.png">
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col snapshot-title">
+                                <h2 class="float-left">MarketWatch</h2>
+                            </div>
+                        </div>
+                        <div class="row snapshot-body">
+
+              
+                            <div class="col">
+                                <div class="use-case">I want to &hellip;</div>
+                                <ul>
+                                    <li>Analyze pricing trends and market cycles by premium size, state, and line of insurance</li>
+                                    <li>Identify growth opportunities</li>
+                                </ul>
+                                <a class="btn btn-primary" href="#" role="button">Learn more</a>
+                            </div>
+                            <div class="col example-img">
+                                <img class="" src="/assets/img/stat-marketwatch3.png">
+                            </div>
+                        </div>
+                       
+                    </div>
+                                
+                </div> 
+               
+            </div><!-- end snapshots div -->
+        </div>
+
+  
+
+         
+    </div> <!-- end main -->
+    <div id="mainmenu" class="container-fluid content fullpage px-0">
+
+                <div id="gpa-title" class="row align-items-center fullpage fix">
+                    <div class="col intro">
+                        <h1 class="align-center">What do you want to do today?</h1>
+                    </div>
+                </div>
+            
+
+                <div id="selector">
+                    <div id="want" class="row align-items-center fullpage fix">
+                        <div class="col-5">
+                            <h1 class="align-right">I want to</h1>
+                        </div>
+                        <div class="col-7 position-relative">
+                            <h1 id="underline" class="align-left"></h1>
+                        </div>
+                    </div>
+                    <div id="category-list" class="row align-items-center">
+                        <div class="col category-menu">
+                            <ul>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#growth"><span>Identify Growth</span> Opportunities</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#">Build Product</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#acquire">Acquire Business</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#">Benchmark Performance</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#">Price Business</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-label">
+                                        <a href="#">Manage Portfolio</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalMarketLandscape" tabindex="-1" role="dialog" aria-labelledby="modalMarketLandscape" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i aria-hidden="true" class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+    
+          <div class="row justify-content-center">
+                <div id="marketlandscape" class="col-md-4 rightbar px-5">
+                  <h2>Market Landscape</h2>
+                  <p>If you're like many insurers, you benchmark against the historical performance of your own book of business. Unfortunately, that may not provide a true indication of performance. To assess your portfolio accurately, look to ISO Market Landscape.</p>
+                  <a class="btn btn-primary w-100" href="#" role="button">Request a Demo <i class="material-icons">open_in_new</i></a>
+                  <div class="caption user-access">
+                    <h4>Request a License</h4>
+                    <p>Your Company is already subscribed to this service. Request access from your account administrator, <a href="#"><b>admin@email.com</b></a>.</p>
+                  </div>
+                </div>
+                <div class="col-md-8 videocol px-5">
+                  <img class="float-right" src="/assets/img/video-landscape.png" width="620" >
+                  <span class="float-left caption">Demonstration of MarketLandscape dashboard</span>
+                  <span class="float-right caption">Duration: 1m 50s</span>
+                </div>
+          </div>
+     
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalMarketStance" tabindex="-1" role="dialog" aria-labelledby="modalMarketStance" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i aria-hidden="true" class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+    
+          <div class="row justify-content-center">
+                <div id="marketstance" class="col-md-4 rightbar px-5">
+                  <h2>MarketStance</h2>
+                  <p>ISO MarketStance is the leading provider of information and analytics to the insurance industry. Our validated and tested analytic techniques provide a synchronized and impartial view of the insurance marketplace to innovate insurance professionals. </p>
+                  <a class="btn btn-primary w-100" href="#" role="button">Request a Demo <i class="material-icons">open_in_new</i></a>
+                  <div class="caption user-access">
+                    <h4>Request a License</h4>
+                    <p>Your Company is already subscribed to this service. Request access from your account administrator, <a href="#"><b>admin@email.com</b></a>.</p>
+                  </div>
+                </div>
+                <div class="col-md-8 videocol px-5">
+                  <img class="float-right" src="/assets/img/video.png" width="620" >
+                  <span class="float-left caption">Demonstration of MarketStance dashboard</span>
+                  <span class="float-right caption">Duration: 1m 45s</span>
+                </div>
+          </div>
+     
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div> 
+
+<!--   <script src="./assets/js/dat.gui.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://s3.amazonaws.com/nextgen-ui/ISO-Design-Pattern/javascripts/bootstrap.min.js"></script>
+  <script src="./assets/js/anime.min.js"></script>
+  <script src="./assets/js/charming.min.js"></script>
+  <script src="./assets/js/textfx.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/jquery.gsap.min.js"></script>
+  <script src="./assets/js/jquery.scrollie.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
